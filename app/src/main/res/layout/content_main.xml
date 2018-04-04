@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.terminator.assemble.MainActivity"
+    tools:showIn="@layout/activity_main">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="340dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/scrollView2"
+        android:background="@drawable/shield">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+
+            <TextView
+                android:id="@+id/realName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="serif-monospace"
+                android:text=" - Real Name"
+                android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+                android:textColor="#FFFFFF"
+                android:textSize="24sp" />
+
+
+            <TextView
+                android:id="@+id/description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="serif-monospace"
+                android:text=" - Subject Description"
+                android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+                android:textColor="#FFFFFF"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/aliases"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="serif-monospace"
+                android:text=" - Aliases"
+                android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+                android:textColor="#FFFFFF"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/affiliation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="serif-monospace"
+                android:text=" - Affiliation"
+                android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+                android:textColor="#FFFFFF"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/currentStatus"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="serif-monospace"
+                android:text=" - Current Status"
+                android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+                android:textColor="#FFFFFF"
+                android:textSize="24sp" />
+
+
+        </LinearLayout>
+    </ScrollView>
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/horizontalScrollView">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageButton
+                android:id="@+id/imageButtonHulk"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:onClick="hulk"
+                app:srcCompat="@drawable/hulk" />
+
+            <ImageButton
+                android:id="@+id/imageButtonIron"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:onClick="iron"
+                app:srcCompat="@drawable/im" />
+
+            <ImageButton
+                android:id="@+id/imageButtonCaptain"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:onClick="captain"
+                app:srcCompat="@drawable/ca" />
+
+            <ImageButton
+                android:id="@+id/imageButtonHawk"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:onClick="hawk"
+                app:srcCompat="@drawable/he" />
+
+            <ImageButton
+                android:id="@+id/imageButtonSpider"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:onClick="spider"
+                app:srcCompat="@drawable/sm" />
+
+            <ImageButton
+                android:id="@+id/imageButtonThor"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:onClick="thor"
+                app:srcCompat="@drawable/th" />
+
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <TextView
+        android:id="@+id/subjectName"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_weight="1"
+        android:fontFamily="casual"
+        android:text="SUBJECT NAME"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat"
+        android:textColor="#FFFFFF"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:typeface="serif"
+        android:layout_below="@+id/horizontalScrollView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="10dp" />
+</RelativeLayout>

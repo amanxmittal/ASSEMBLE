@@ -1,0 +1,25 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.terminator.menu.MainActivity">
+
+
+    <item
+        android:id="@+id/l1"
+        android:orderInCategory="100"
+        android:title="Lock Down"
+        app:showAsAction="never"
+        />
+    <item
+        android:id="@+id/aa"
+        android:orderInCategory="101"
+        android:title="Assemble all" />
+    <item
+        android:id="@+id/r1"
+        android:orderInCategory="102"
+        android:title="Rating" />
+    <item
+        android:id="@+id/c1"
+        android:orderInCategory="103"
+        android:title="Contacts" />
+</menu>
